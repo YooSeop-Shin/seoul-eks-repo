@@ -10,12 +10,11 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/group.name: eks-seoul-group
  #  alb.ingress.kubernetes.io/group.order: '3'
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:214813472555:certificate/92e2630c-bf68-4d40-9ad6-2cf2ac2ac7ad
     alb.ingress.kubernetes.io/ssl-redirect: '443'
 spec:
   rules:
-    - host: seoul.solflix.tk
     - http:
         paths:
           - path: /
