@@ -3,7 +3,7 @@ kind: Kustomization
 images:
 - name: 214813472555.dkr.ecr.ap-northeast-2.amazonaws.com/seoul-frontend
   newName: 214813472555.dkr.ecr.ap-northeast-2.amazonaws.com/seoul-frontend
-  newTag: a3eef5e6
+  newTag: 2979366c
 resources:
 - ../../base
 patchesStrategicMerge:
